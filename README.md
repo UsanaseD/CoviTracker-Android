@@ -1,1 +1,0 @@
-# CoviTracker-Android

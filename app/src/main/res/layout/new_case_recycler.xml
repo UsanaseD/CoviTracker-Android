@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/rounded"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/concert_one"
+                android:text="@string/country"
+                android:textAlignment="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="20sp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/flag"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:contentDescription="flag"
+                android:src="@drawable/rw" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@id/linear"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/total_cases"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/concert_one"
+                android:text="@string/cases"
+                android:textAlignment="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
